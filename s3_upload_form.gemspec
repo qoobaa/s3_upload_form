@@ -19,6 +19,12 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "generators/s3_upload_form/s3_upload_form_generator.rb",
+     "generators/s3_upload_form/templates/initializers/s3_upload_form.rb",
+     "lib/s3_upload_form.rb",
+     "lib/s3_upload_form/configuration.rb",
+     "lib/s3_upload_form/helpers.rb",
+     "s3_upload_form.gemspec",
      "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/qoobaa/s3_upload_form}
