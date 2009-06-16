@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{d2s3}
-  s.version = "0.2.1"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Williams", "Jakub Kuźma"]
@@ -16,8 +16,17 @@ Gem::Specification.new do |s|
     ".document",
      ".gitignore",
      "LICENSE",
+     "README.markdown",
      "Rakefile",
+     "VERSION",
+     "d2s3.gemspec",
+     "generators/d2s3/d2s3.rb",
+     "generators/d2s3/templates/initializers/d2s3.rb",
      "lib/d2s3.rb",
+     "lib/d2s3/configuration.rb",
+     "lib/d2s3/signature.rb",
+     "lib/d2s3/view_helpers.rb",
+     "test/signature_test.rb",
      "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/qoobaa/d2s3}
