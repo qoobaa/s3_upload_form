@@ -10,7 +10,7 @@
 ### Configuration
 
 To configure s3_upload_form use s3_upload_form generator...
-  ./script/generate s3_upload_form
+    ./script/generate s3_upload_form
 
 ... and edit the generated initializer file s3_upload_form.rb.
 
