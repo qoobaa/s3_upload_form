@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "d2s3.gemspec",
-     "generators/d2s3/d2s3.rb",
      "generators/d2s3/templates/initializers/d2s3.rb",
      "lib/d2s3.rb",
      "lib/d2s3/configuration.rb",
@@ -35,8 +34,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.4}
   s.summary = %q{direct to s3}
   s.test_files = [
-    "test/signature_test.rb",
-     "test/test_helper.rb"
+    "test/test_helper.rb",
+     "test/signature_test.rb"
   ]
 
   if s.respond_to? :specification_version then
