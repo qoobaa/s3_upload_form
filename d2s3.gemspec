@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{d2s3}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Williams", "Jakub Kuźma"]
@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
      "lib/d2s3/configuration.rb",
      "lib/d2s3/signature.rb",
      "lib/d2s3/view_helpers.rb",
-     "qoobaa-d2s3-0.1.1.gem",
      "test/signature_test.rb",
      "test/test_helper.rb"
   ]
