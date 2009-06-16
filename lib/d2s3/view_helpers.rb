@@ -13,7 +13,7 @@ module D2S3
       acl             = options[:acl] || 'public-read'
       expiration_date = (options[:expiration_date] || 10.hours).from_now.strftime('%Y-%m-%dT%H:%M:%S.000Z')
       max_filesize    = options[:max_filesize] || 1.megabyte
-      submit_button   = options[:submit_button] || '<input type="submit" value="#{I18n.t("button.upload")}">'
+      submit_button   = options[:submit_button] || %(<input type="submit" value="#{I18n.t("button.upload")}">)
 
       options[:form] ||= {}
       options[:form][:id] ||= 'upload-form'
