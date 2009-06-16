@@ -6,11 +6,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "d2s3"
-    gem.summary = %Q{direct to s3}
+    gem.name = "s3_upload_form"
+    gem.summary = %Q{S3 file upload form}
     gem.email = "qoobaa@gmail.com"
-    gem.homepage = "http://github.com/qoobaa/d2s3"
-    gem.authors = ["Matthew Williams", "Jakub Kuźma"]
+    gem.homepage = "http://github.com/qoobaa/s3_upload_form"
+    gem.authors = ["Jakub Kuźma"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
