@@ -1,6 +1,6 @@
 require "singleton"
 
-module D2S3
+module D2s3
   class Configuration
     include Singleton
 

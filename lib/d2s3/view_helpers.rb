@@ -1,12 +1,12 @@
 require 'base64'
 
-module D2S3
+module D2s3
   module ViewHelpers
-    include D2S3::Signature
+    include D2s3::Signature
 
     def s3_upload_form_tag(options = {})
-      bucket          = D2S3.configuration.bucket
-      access_key_id   = D2S3.configuration.access_key_id
+      bucket          = D2s3.configuration.bucket
+      access_key_id   = D2s3.configuration.access_key_id
       protocol        = options[:protocol] || "http"
       key             = options[:key] || ''
       redirect        = options[:redirect] || '/'
@@ -30,7 +30,7 @@ module D2S3
           ]
         })).gsub(/\n|\r/, '')
 
-      signature = b64_hmac_sha1(D2S3.configuration.secret_access_key, policy)
+      signature = b64_hmac_sha1(D2s3.configuration.secret_access_key, policy)
       out = ""
       out << %(
           <form action="#{protocol}://#{bucket}.s3.amazonaws.com/" method="post" enctype="multipart/form-data" id="#{options[:form][:id]}" class="#{options[:form][:class]}" style="#{options[:form][:style]}">
@@ -47,4 +47,4 @@ module D2S3
   end
 end
 
-ActionView::Base.send(:include, D2S3::ViewHelpers) if defined?(ActionView::Base)
+ActionView::Base.send(:include, D2s3::ViewHelpers) if defined?(ActionView::Base)

@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "d2s3.gemspec",
+     "generators/d2s3/d2s3_generator.rb",
      "generators/d2s3/templates/initializers/d2s3.rb",
      "lib/d2s3.rb",
      "lib/d2s3/configuration.rb",

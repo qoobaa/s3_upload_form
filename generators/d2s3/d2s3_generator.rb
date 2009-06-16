@@ -1,6 +1,6 @@
 require 'rbconfig'
 
-class D2S3Generator < Rails::Generator::Base
+class D2s3Generator < Rails::Generator::Base
   def manifest
     record do |m|
       m.directory "config"

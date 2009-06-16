@@ -1,4 +1,4 @@
-module D2S3
+module D2s3
   module Signature
     HEXCASE = false  # hex output format. false - lowercase; true - uppercase
     B64PAD  = "=" # base-64 pad character. "=" for strict RFC compliance
