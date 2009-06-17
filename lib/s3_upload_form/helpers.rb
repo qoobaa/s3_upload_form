@@ -12,9 +12,9 @@ module S3UploadForm
       redirect          = options.delete(:redirect) || "/"
       acl               = options.delete(:acl) || "public-read"
       expiration_date   = (options.delete(:expiration_date) || 10.hours).from_now.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-      filesize          = options.delete(:filesize) || 0..1.megabyte
-      filesize = 0..filesize if filesize.kind_of?(Fixnum)
-      submit            = options.delete(:submit_button) || submit_tag(I18n.t("button.upload", :default => "Upload"))
+      filesize          = options.delete(:filesize) || (1..1.megabyte)
+      filesize_range    = filesize.kind_of?(Fixnum) ? 1..filesize : filesize
+      submit            = options.delete(:submit) || submit_tag(I18n.t("button.upload", :default => "Upload"))
 
       policy_document = <<-eos
         {
@@ -25,7 +25,7 @@ module S3UploadForm
               ["starts-with", "$key", "#{key}"],
               {"acl": "#{acl}"},
               {"success_action_redirect": "#{redirect}"},
-              ["content-length-range", #{filesize.first}, #{filesize.last}]
+              ["content-length-range", #{filesize_range.first}, #{filesize_range.last}]
             ]
         }
       eos
