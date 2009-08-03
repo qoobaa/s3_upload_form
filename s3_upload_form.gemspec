@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{s3_upload_form}
-  s.version = "0.2.2"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jakub Kuźma"]
-  s.date = %q{2009-06-17}
+  s.date = %q{2009-08-03}
   s.email = %q{qoobaa@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/qoobaa/s3_upload_form}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.4}
+  s.rubygems_version = %q{1.3.5}
   s.summary = %q{S3 file upload form}
   s.test_files = [
     "test/test_helper.rb"
